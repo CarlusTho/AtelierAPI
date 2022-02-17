@@ -7,23 +7,30 @@ function App() {
     Axios.get("https://api.trace.moe/search?url=https://images.plurk.com/32B15UXxymfSMwKGTObY5e.jpg").then(
       (response) => {
         console.log(response);
-        setVideo(response.)
+        
       }
     );
   };
   return (
     <div className="App">
+      <header>Anime quizz</header>
       <form>
-        <div id="mediaUp">
-          <input> Entrez l'image de l'animé à utiliser </input>
+        <div className="mediaUp">
+        <input placeholder="Entrez l'url de l'image d'un anime à utiliser"/>
           <button onClick={getVideo}>Télécharge la vidéo</button>
         </div>
-        <input> Entrez votre question </input>
-        <input> Choix 1 </input>
-        <input> Choix 2 </input>
-        <input> Choix 3 </input>
-        <input> Choix 4 </input>
-        
+
+        <div className="question">
+        <input placeholder="Entrer votre question"/>
+        </div>
+
+        <div className="answers">
+          <input placeholder="Choix 1"/>
+          <input placeholder="Choix 2"/>
+          <input placeholder="Choix 3"/>
+          <input placeholder="Choix 4"/>
+        </div>
+
       </form>
     </div>
   );
