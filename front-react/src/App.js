@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import './App.css';
+import './styles/App.css';
 import Axios from "axios";
 
 function App() {
-  const getVideo = () => {
+  /*const getVideo = () => {
     Axios.get("https://api.trace.moe/search?url=https://images.plurk.com/32B15UXxymfSMwKGTObY5e.jpg").then(
       (response) => {
         console.log(response);
-        
       }
     );
-  };
+  };*/
   return (
     <div className="App">
       <header>Anime quizz</header>
       <form>
         <div className="mediaUp">
-        <input placeholder="Entrez l'url de l'image d'un anime à utiliser"/>
-          <button onClick={getVideo}>Télécharge la vidéo</button>
+          <input placeholder="Entrez l'url de l'image d'un anime à utiliser"/>
+          <button /*onClick={getVideo}*/>Télécharge la vidéo</button>
         </div>
 
         <div className="question">
-        <input placeholder="Entrer votre question"/>
+          <input placeholder="Entrer votre question"/>
+          <input placeholder="Numéro de la bonne réponse"/>
         </div>
 
         <div className="answers">
